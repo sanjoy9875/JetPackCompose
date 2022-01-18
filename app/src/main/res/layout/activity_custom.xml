@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".custom_views.CustomActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:text="Hello Custom Views" />
+
+    <com.example.jetpackwithmvvm.custom_views.EmotionalFaceView
+        android:id="@+id/happyMouth"
+        android:layout_width="@dimen/face_button_dimen"
+        android:layout_height="@dimen/face_button_dimen"
+        android:layout_margin="@dimen/dp_10" />
+
+    <com.example.jetpackwithmvvm.custom_views.NoMouthView
+        android:id="@+id/noMouth"
+        android:layout_width="@dimen/face_button_dimen"
+        android:layout_height="@dimen/face_button_dimen"
+        android:layout_margin="@dimen/dp_10"
+        app:borderColor="@color/white"
+        app:eyesColor="@color/white"
+        app:faceColor="@color/red"
+        app:mouthColor="@color/white" />
+
+    <com.example.jetpackwithmvvm.custom_views.SadFaceView
+        android:id="@+id/sadMouth"
+        android:layout_width="@dimen/face_button_dimen"
+        android:layout_height="@dimen/face_button_dimen"
+        android:layout_margin="@dimen/dp_10"
+        app:borderColor="@color/black"
+        app:eyesColor="@color/black"
+        app:faceColor="@color/light_grey"
+        app:mouthColor="@color/black" />
+
+    <com.example.jetpackwithmvvm.custom_views.StraightMouthView
+        android:id="@+id/straightMouth"
+        android:layout_width="@dimen/face_button_dimen"
+        android:layout_height="@dimen/face_button_dimen"
+        android:layout_margin="@dimen/dp_10"
+        app:borderColor="@color/black"
+        app:eyesColor="@color/black"
+        app:faceColor="@color/light_grey"
+        app:mouthColor="@color/black" />
+
+</LinearLayout>
