@@ -1,11 +1,11 @@
-package com.example.jetpackwithmvvm.custom_views
+package com.example.jetpackwithmvvm.custom_views.imogies
 
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
 
-class EmotionalFaceView(context: Context, attrs: AttributeSet) : View(context, attrs) {
+class StraightMouthView(context: Context, attrs: AttributeSet) : View(context, attrs) {
 
     // Paint object for coloring and styling
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -75,10 +75,16 @@ class EmotionalFaceView(context: Context, attrs: AttributeSet) : View(context, a
     private fun drawMouth(canvas: Canvas) {
         // 1
         mouthPath.moveTo(size * 0.22f, size * 0.7f)
+        val rect = Rect()
+        rect.top = 10
+        rect.left = 10
+        rect.bottom = rect.top + 10
+        rect.right = rect.left + 10
         // 2
-        mouthPath.quadTo(size * 0.50f, size * 0.80f, size * 0.78f, size * 0.70f)
-        // 3
-        mouthPath.quadTo(size * 0.50f, size * 0.90f, size * 0.22f, size * 0.70f)
+        // Sad mouth path
+        mouthPath.quadTo(size * 0.50f, size * 0.60f ,size * 0.78f, size * 0.60f)
+        mouthPath.quadTo(size * 0.54f, size * 0.64f ,size * 0.82f, size * 0.60f)
+
         // 4
         paint.color = mouthColor
         paint.style = Paint.Style.FILL

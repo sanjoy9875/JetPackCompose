@@ -1,4 +1,4 @@
-package com.example.jetpackwithmvvm.custom_views
+package com.example.jetpackwithmvvm.custom_views.imogies
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

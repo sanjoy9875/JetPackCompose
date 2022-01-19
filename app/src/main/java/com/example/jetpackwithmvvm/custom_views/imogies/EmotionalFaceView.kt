@@ -1,11 +1,11 @@
-package com.example.jetpackwithmvvm.custom_views
+package com.example.jetpackwithmvvm.custom_views.imogies
 
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
 
-class SadFaceView(context: Context, attrs: AttributeSet) : View(context, attrs) {
+class EmotionalFaceView(context: Context, attrs: AttributeSet) : View(context, attrs) {
 
     // Paint object for coloring and styling
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -76,10 +76,9 @@ class SadFaceView(context: Context, attrs: AttributeSet) : View(context, attrs) 
         // 1
         mouthPath.moveTo(size * 0.22f, size * 0.7f)
         // 2
-        // Sad mouth path
-        mouthPath.quadTo(size * 0.5f, size * 0.50f, size * 0.78f, size * 0.7f)
-        mouthPath.quadTo(size * 0.5f, size * 0.60f, size * 0.22f, size * 0.7f)
-
+        mouthPath.quadTo(size * 0.50f, size * 0.80f, size * 0.78f, size * 0.70f)
+        // 3
+        mouthPath.quadTo(size * 0.50f, size * 0.90f, size * 0.22f, size * 0.70f)
         // 4
         paint.color = mouthColor
         paint.style = Paint.Style.FILL

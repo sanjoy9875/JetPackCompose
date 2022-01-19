@@ -9,18 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JetpackWithMVVM">
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity" />
-
         <activity
-            android:name=".custom_views.CustomActivity"
+            android:name=".custom_views.draw_path.DrawActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".custom_views.imogies.CustomActivity"/>
     </application>
 
 </manifest>

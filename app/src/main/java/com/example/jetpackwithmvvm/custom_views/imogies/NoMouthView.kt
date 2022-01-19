@@ -1,4 +1,4 @@
-package com.example.jetpackwithmvvm.custom_views
+package com.example.jetpackwithmvvm.custom_views.imogies
 
 import android.content.Context
 import android.graphics.*
